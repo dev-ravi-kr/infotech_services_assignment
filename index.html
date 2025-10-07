@@ -18,108 +18,134 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header class="primary-header">
-      <div class="container">
+    <header class="primary-header fs-400 font-medium">
+      <div class="container flex">
         <a href="#">
           <img src="./src/assets/images/company.jpg" alt="" srcset="" />
         </a>
 
-        <nav class="primary-navigation">
-          <ul class="nav-list">
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> About Us </a></li>
-            <li><a href="#"> Our Services</a></li>
-            <li><a href="#"> Pricing </a></li>
-            <li><a href="#"> FAQs</a></li>
+        <nav class="primary-navigation desktop">
+          <ul class="nav-list even-columns">
+            <li class=""><a class="" href="#"> Home</a></li>
+            <li class=""><a class="" href="#"> About Us </a></li>
+            <li class=""><a class="" href="#"> Our Services</a></li>
+            <li class=""><a class="" href="#"> Pricing </a></li>
+            <li class=""><a class="" href="#"> FAQs</a></li>
           </ul>
         </nav>
 
-        <button class="button">Get A Quote</button>
+        <button class="button desktop">Get A Quote</button>
+        <button class="button mobile"></button>
       </div>
     </header>
 
-    <main>
-      <section class="container">
-        <div class="even-columns">
+    <main class="">
+      <section class="bg-gradient">
+        <div class="even-columns container hero-container">
           <div>
-            <h1 class="fs-primary-heading fw-bold">
+            <h1 class="fs-heading-700 font-bold capitalize">
               Your Resume Deserves a yes let’s make it happen
             </h1>
-            <p>
+            <p class="fs-para-300 font-regular">
               If your resume isn’t getting responses, it’s time for an upgrade.
               Get an ATS-optimized resume crafted by HR experts to help you land
               more interviews. Our resumes are designed to get your foot in the
               door and place your name at the top of the shortlist.
             </p>
-            <button class="button">Resume Pakages</button
-            ><button class="button">Contact us</button>
+            <button class="button fs-400">Resume Pakages</button>
+            <button class="button fs-400">Contact us</button>
           </div>
           <div>
-            <img src="./src/assets/images/smiling.jpg" alt="" />
-            <div>
-              <span> 4.9 </span>
-              <span>
-                <img src="./src/assets/icons/star.png" alt="" />
-                <img src="./src/assets/icons/star.png" alt="" />
-                <img src="./src/assets/icons/star.png" alt="" />
-                <img src="./src/assets/icons/star.png" alt="" />
-                <img src="./src/assets/icons/star.png" alt="" />
-              </span>
-              <span>Instructor Rating</span>
-            </div>
-            <div>
-              <img src="./src/assets/icons/hat-icon.svg" alt="" />
-              <span> 260+ </span>
-              <span> Online Resume Created </span>
-            </div>
+            <img
+              class="desktop"
+              src="./src/assets/images/Smilling.png"
+              alt=""
+            />
+            <img
+              class="mobile"
+              src="./src/assets/images/Smilling-mobile.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
 
-      <section class="container">
-        <div class="container-span">
-          <span>What you Get</span>
-          <h2>
+      <section class="block-padding">
+        <div class="container-span container ">
+          <span class="fs-400 tag round-200 block-margin">What you Get</span>
+          <h2 class="fs-heading-500 font-semi-bold capitalize block-margin">
             You’re not just <span>another applicant</span> and your
             resume shouldn’t look like one
           </h2>
         </div>
-        <ul class="feature-list">
+        <ul class="feature-list even-columns container">
           <li>
-            <div class="feature-card">
-              <img src="./src/assets/images/resume.jpg" alt="" />
-              <h3>A Resume Format That Gets You Interviews</h3>
-              <p>
+            <div class="feature-card round-400">
+              <img
+                class="card__image"
+                src="./src/assets/images/resume.jpg"
+                alt=""
+              />
+              <h3
+                class="fs-heading-300 font-semi-bold card__heading capitalize"
+              >
+                A Resume Format That Gets You Interviews
+              </h3>
+              <p class="fs-para-400 text-primary-700 font-regular card__para">
                 Get a professionally written, keyword-optimized resume that
                 lands in recruiter inboxes.
               </p>
             </div>
           </li>
           <li>
-            <div class="feature-card">
-              <img src="./src/assets/images/letter.jpg" alt="" />
-              <h3>A Cover Letter Style That Stands Out Strong</h3>
-              <p>
+            <div class="feature-card round-400">
+              <img
+                class="card__image"
+                src="./src/assets/images/letter.jpg"
+                alt=""
+              />
+              <h3
+                class="fs-heading-300 font-semi-bold card__heading capitalize"
+              >
+                A Cover Letter Style That Stands Out Strong
+              </h3>
+              <p class="fs-para-400 text-primary-700 font-regular card__para">
                 Stand out with a cover letter that speaks directly to the role
                 and reflects your strengths.
               </p>
             </div>
           </li>
           <li>
-            <div class="feature-card">
-              <img src="./src/assets/images/profile.jpg" alt="" />
-              <h3>A LinkedIn Profile That Works For You</h3>
-              <p>
+            <div class="feature-card round-400">
+              <img
+                class="card__image"
+                src="./src/assets/images/profile.jpg"
+                alt=""
+              />
+              <h3
+                class="fs-heading-300 font-semi-bold card__heading capitalize"
+              >
+                A LinkedIn Profile That Works For You
+              </h3>
+              <p class="fs-para-400 text-primary-700 font-regular card__para">
                 Attract the right eyes, start conversations, and show up in
                 recruiter searches.
               </p>
             </div>
           </li>
           <li>
-            <div class="feature-card">
-              <img src="./src/assets/images/interview.jpg" alt="" />
-              <h3>An Interview Strategy That Builds Confidence</h3>
-              <p>
+            <div class="feature-card round-400">
+              <img
+                class="card__image"
+                src="./src/assets/images/interview.jpg"
+                alt=""
+              />
+              <h3
+                class="fs-heading-300 font-semi-bold card__heading capitalize"
+              >
+                An Interview Strategy That Builds Confidence
+              </h3>
+              <p class="fs-para-400 text-primary-700 font-regular card__para">
                 Interview preperation with real HR professionals so you speak
                 clearly confidently.
               </p>

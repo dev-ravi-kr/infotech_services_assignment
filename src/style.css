@@ -13,9 +13,7 @@
 }
 
 body {
-  /* 4. Add accessible line-height */
   line-height: 1.5;
-  /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -67,7 +65,7 @@ li {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 /* styling */
@@ -134,7 +132,7 @@ body {
 }
 
 .bg-gradient {
-  background: linear-gradient(to top right, var(--clr-primary-500), var(--clr-primary-100));
+  background-image: linear-gradient(to top right, var(--clr-primary-500), var(--clr-primary-100));
 }
 
 .font-bold {
@@ -199,14 +197,168 @@ body {
   }
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
 
 body {
   font-family: var(--ff-primary);
 }
 
 .container {
-  --max-width: ;
-  --padding: ;
+  --max-width: 82rem;
+  --padding: 2rem;
+
+
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+@meedia (min-width: 50em) {
+  .container {
+    --padding: 1rem;
+  }
+}
+
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+}
+
+.round-500 {
+  border-radius: 5rem;
+}
+
+.round-100 {
+  border-radius: .25rem;
+}
+
+.round-200 {
+  border-radius: .5rem;
+}
+
+.round-300 {
+  border-radius: .75rem;
+}
+
+.round-400 {
+  border-radius: 1rem;
+}
+
+
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  gap: 1rem;
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width:50em) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
 }
 
 /* general styling */
+
+
+* {
+  text-align: center;
+}
+
+@media (min-width:50em) {
+
+
+
+
+  .hero-container {
+    padding-top: 5rem;
+  }
+}
+
+/* img{
+  outline: 2px solid red;
+  margin-inline: auto;
+} */
+
+
+main {
+  /* padding-inline: 5rem; */
+}
+
+.container-span {
+  /* margin-inline: 2rem; */
+  /* padding-block: 5rem; */
+
+}
+
+.tag {
+  background-color: var(--clr-primary-400);
+  padding-block: 0.5em;
+  padding-inline: 1em;
+}
+
+.block-padding{
+  padding-block: calc(2.5 * var(--fs-300));
+}
+
+.block-margin{
+  margin-block: 1em;
+}
+
+.feature-card {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+
+  display: grid;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgba(149, 157, 165, 0.2) 0px 4px 15px;
+
+}
+
+.card__image {
+  width: min-content;
+  margin-inline: auto;
+}
+
+.card__heading {
+
+  margin-block: 1.5em;
+}
+
+.card__para {}
+
+
+@media (min-width:50em) {
+  .feature-card {}
+}
+
+.border-black {
+  outline: 2px solid black;
+}
