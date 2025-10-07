@@ -230,11 +230,22 @@ body {
   }
 }
 
+.grid {
+  display: grid;
+}
 
 .even-columns {
   display: grid;
   gap: 1rem;
 }
+
+.even-rows {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+}
+
 
 @media (min-width: 50em) {
   .even-columns {
@@ -270,6 +281,10 @@ body {
 
 .width-80 {
   width: 80%;
+
+  @media (max-width: 50em) {
+    margin-inline: auto;
+  }
 }
 
 .flex {
@@ -399,6 +414,9 @@ main {
     var(--clr-primary-800) 0px 1px 15px;
 }
 
+.btn-menu {
+  background-color: transparent;
+}
 
 .feature-card {
   padding-block: 1rem;
@@ -451,3 +469,30 @@ a:active {
 .active {
   color: var(--clr-primary-800);
 }
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: var(--clr-primary-200);
+  width: 80%;
+  padding: 1.5rem;
+}
+
+.menu-header {
+  width: calc(100%-3rem);
+}
+
+.icon{
+  display: inline-flex;
+  /* width: 1rem;
+  height: 1rem; */
+  /* margin: auto; */
+  /* padding: auto; */
+}
+
+.hide{
+  display: none;
+}
+

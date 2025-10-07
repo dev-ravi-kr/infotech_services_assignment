@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header class="primary-header fs-400 font-medium ">
+    <header class="primary-header fs-400 font-medium">
       <div
         class="container flex block-margin flex-space-between flex-center-block"
       >
         <a href="#" class="">
-          <img src="./src/assets/images/company.jpg" alt="" srcset="" />
+          <img src="./src/assets/images/company.svg" alt="" srcset="" />
         </a>
 
         <nav class="primary-navigation desktop">
@@ -39,14 +39,78 @@
         <button class="button desktop round-500 fs-400 btn-solid">
           Get A Quote
         </button>
-        <button class="button mobile"></button>
+        <button class="btn-menu mobile round-500" id="open-menu">
+          <img src="./src/assets/icons/menu.svg" alt="" />
+        </button>
       </div>
     </header>
-
+    <aside class="menu hide">
+      <div class="flex menu-header flex-space-between block-margin">
+        <a href="#" class="">
+          <img src="./src/assets/images/company-mobile.svg" alt="" srcset="" />
+        </a>
+        <button class="btn-menu mobile round-500" id="close-menu">
+          <img src="./src/assets/icons/cross-icon.svg" alt="" />
+        </button>
+      </div>
+      <nav class="secondary-navigation mobile block-margin">
+        <ul class="nav-list even-rows">
+          <li class="">
+            <a class="flex block-margin flex-center-block" href="#">
+              <img class="icon" src="./src/assets/icons/home-icon.svg" alt="" />
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="">
+            <a class="flex block-margin flex-center-block" href="#">
+              <img
+                class="icon"
+                src="./src/assets/icons/about-icon.svg"
+                alt=""
+              />
+              <span>About Us </span>
+            </a>
+          </li>
+          <li class="">
+            <a class="flex block-margin flex-center-block" href="#">
+              <img
+                class="icon"
+                src="./src/assets/icons/services-icon.svg"
+                alt=""
+              />
+              <span>Our Services</span>
+            </a>
+          </li>
+          <li class="">
+            <a class="flex block-margin flex-center-block" href="#">
+              <img
+                class="icon"
+                src="./src/assets/icons/price-icon.svg"
+                alt=""
+              />
+              <span>Pricing</span>
+            </a>
+          </li>
+          <li class="">
+            <a class="flex block-margin flex-center-block" href="#">
+              <img
+                class="icon"
+                src="./src/assets/icons/questions-icon.svg"
+                alt=""
+              />
+              <span>FAQs</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="button mobile round-500 fs-400 btn-solid">
+        contact us
+      </button>
+    </aside>
     <main class="">
       <section class="bg-gradient">
         <div class="even-columns container hero-container">
-          <div class="text-left">
+          <div class="text-left text-center">
             <h1
               class="fs-heading-700 font-bold capitalize line-height block-margin"
             >
@@ -58,8 +122,8 @@
               more interviews. Our resumes are designed to get your foot in the
               door and place your name at the top of the shortlist.
             </p>
-            <div class="block-margin block-padding">
-              <button class="button fs-400 round-500 btn-outline">
+            <div class="block-margin">
+              <button class="button fs-400 round-500 btn-outline block-margin">
                 Resume Pakages
               </button>
               <button class="button fs-400 round-500 btn-solid">
@@ -67,15 +131,15 @@
               </button>
             </div>
           </div>
-          <div>
+          <div class="">
             <img
               class="desktop"
-              src="./src/assets/images/Smilling.png"
+              src="./src/assets/images/Smilling.svg"
               alt=""
             />
             <img
               class="mobile"
-              src="./src/assets/images/Smilling-mobile.png"
+              src="./src/assets/images/Smilling-mobile.svg"
               alt=""
             />
           </div>
@@ -95,7 +159,7 @@
             <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
-                src="./src/assets/images/resume.jpg"
+                src="./src/assets/images/resume.svg"
                 alt=""
               />
               <h3
@@ -113,7 +177,7 @@
             <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
-                src="./src/assets/images/letter.jpg"
+                src="./src/assets/images/letter.svg"
                 alt=""
               />
               <h3
@@ -131,7 +195,7 @@
             <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
-                src="./src/assets/images/profile.jpg"
+                src="./src/assets/images/profile.svg"
                 alt=""
               />
               <h3
@@ -149,7 +213,7 @@
             <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
-                src="./src/assets/images/interview.jpg"
+                src="./src/assets/images/interview.svg"
                 alt=""
               />
               <h3
@@ -167,6 +231,6 @@
       </section>
     </main>
 
-    <script type="module" src="#"></script>
+    <script type="module" src="/src/index.js"></script>
   </body>
 </html>
