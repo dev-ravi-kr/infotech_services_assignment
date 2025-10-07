@@ -182,7 +182,17 @@ body {
   font-size: var(--fs-400);
 }
 
+.text-center {
+  text-align: center;
+}
+
+
+
 @media (min-width: 50em) {
+
+  .text-left {
+    text-align: left;
+  }
 
   .fs-heading-300 {
     --fs-heading: var(--fs-500);
@@ -214,7 +224,7 @@ body {
   margin-inline: auto;
 }
 
-@meedia (min-width: 50em) {
+@media (min-width: 50em) {
   .container {
     --padding: 1rem;
   }
@@ -254,14 +264,45 @@ body {
   border-radius: 1rem;
 }
 
+.line-height {
+  line-height: 1.25em;
+}
 
+.width-80 {
+  width: 80%;
+}
 
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* flex-direction: column; */
   gap: 1rem;
+}
+
+.flex-center-inline {
+  justify-content: center;
+}
+
+.flex-center-block {
+  align-items: center;
+}
+
+.flex-space-between {
+  /* align-items: center; */
+  justify-content: space-between;
+
+}
+
+.flex-space-evenly {
+  /* align-items: center; */
+  justify-content: space-evenly;
+
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .mobile {
@@ -285,13 +326,7 @@ body {
 
 /* general styling */
 
-
-* {
-  text-align: center;
-}
-
 @media (min-width:50em) {
-
 
 
 
@@ -322,13 +357,48 @@ main {
   padding-inline: 1em;
 }
 
-.block-padding{
+.block-padding {
   padding-block: calc(2.5 * var(--fs-300));
 }
 
-.block-margin{
+.block-margin {
   margin-block: 1em;
 }
+
+.inline-padding {
+  padding-inline: 1em;
+}
+
+.inline-margin {
+  margin-inline: 1.5em;
+}
+
+.btn-solid {
+  --text-color: var(--clr-neutral-900);
+  --border-color: var(--clr-primary-800);
+
+}
+
+.btn-outline {
+  --text-color: var(--clr-primary-800);
+  --border-color: var(--clr-neutral-900);
+
+}
+
+
+.button {
+  /* font-size: var(--fs-400); */
+  padding-block: .5em;
+  padding-inline: 2em;
+  text-transform: uppercase;
+
+  background-color: var(--border-color);
+  color: var(--text-color);
+  box-shadow:
+    var(--clr-primary-800) 0px 1px 4px,
+    var(--clr-primary-800) 0px 1px 15px;
+}
+
 
 .feature-card {
   padding-block: 1rem;
@@ -352,6 +422,8 @@ main {
   margin-block: 1.5em;
 }
 
+
+
 .card__para {}
 
 
@@ -359,6 +431,23 @@ main {
   .feature-card {}
 }
 
-.border-black {
+.border-black * {
   outline: 2px solid black;
+}
+
+.primary-navigation {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-neutral-000);
+}
+
+a:active {
+  color: var(--clr-primary-800);
+}
+
+.active {
+  color: var(--clr-primary-800);
 }

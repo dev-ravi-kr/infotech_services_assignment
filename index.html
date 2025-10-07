@@ -18,15 +18,17 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header class="primary-header fs-400 font-medium">
-      <div class="container flex">
-        <a href="#">
+    <header class="primary-header fs-400 font-medium ">
+      <div
+        class="container flex block-margin flex-space-between flex-center-block"
+      >
+        <a href="#" class="">
           <img src="./src/assets/images/company.jpg" alt="" srcset="" />
         </a>
 
         <nav class="primary-navigation desktop">
-          <ul class="nav-list even-columns">
-            <li class=""><a class="" href="#"> Home</a></li>
+          <ul class="nav-list flex flex-space-evenly">
+            <li class=""><a class="active" href="#"> Home</a></li>
             <li class=""><a class="" href="#"> About Us </a></li>
             <li class=""><a class="" href="#"> Our Services</a></li>
             <li class=""><a class="" href="#"> Pricing </a></li>
@@ -34,7 +36,9 @@
           </ul>
         </nav>
 
-        <button class="button desktop">Get A Quote</button>
+        <button class="button desktop round-500 fs-400 btn-solid">
+          Get A Quote
+        </button>
         <button class="button mobile"></button>
       </div>
     </header>
@@ -42,18 +46,26 @@
     <main class="">
       <section class="bg-gradient">
         <div class="even-columns container hero-container">
-          <div>
-            <h1 class="fs-heading-700 font-bold capitalize">
+          <div class="text-left">
+            <h1
+              class="fs-heading-700 font-bold capitalize line-height block-margin"
+            >
               Your Resume Deserves a yes let’s make it happen
             </h1>
-            <p class="fs-para-300 font-regular">
+            <p class="fs-para-300 font-regular width-80">
               If your resume isn’t getting responses, it’s time for an upgrade.
               Get an ATS-optimized resume crafted by HR experts to help you land
               more interviews. Our resumes are designed to get your foot in the
               door and place your name at the top of the shortlist.
             </p>
-            <button class="button fs-400">Resume Pakages</button>
-            <button class="button fs-400">Contact us</button>
+            <div class="block-margin block-padding">
+              <button class="button fs-400 round-500 btn-outline">
+                Resume Pakages
+              </button>
+              <button class="button fs-400 round-500 btn-solid">
+                Contact us
+              </button>
+            </div>
           </div>
           <div>
             <img
@@ -71,7 +83,7 @@
       </section>
 
       <section class="block-padding">
-        <div class="container-span container ">
+        <div class="container-span container text-center">
           <span class="fs-400 tag round-200 block-margin">What you Get</span>
           <h2 class="fs-heading-500 font-semi-bold capitalize block-margin">
             You’re not just <span>another applicant</span> and your
@@ -80,7 +92,7 @@
         </div>
         <ul class="feature-list even-columns container">
           <li>
-            <div class="feature-card round-400">
+            <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
                 src="./src/assets/images/resume.jpg"
@@ -98,7 +110,7 @@
             </div>
           </li>
           <li>
-            <div class="feature-card round-400">
+            <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
                 src="./src/assets/images/letter.jpg"
@@ -116,7 +128,7 @@
             </div>
           </li>
           <li>
-            <div class="feature-card round-400">
+            <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
                 src="./src/assets/images/profile.jpg"
@@ -134,7 +146,7 @@
             </div>
           </li>
           <li>
-            <div class="feature-card round-400">
+            <div class="feature-card round-400 text-center">
               <img
                 class="card__image"
                 src="./src/assets/images/interview.jpg"
